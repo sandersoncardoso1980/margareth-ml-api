@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-supabase
-pandas==2.2.2  # Versão estável e compatível com Python 3.10/3.11/3.12
-python-dotenv
-numpy
-scikit-learn
