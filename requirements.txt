@@ -1,7 +1,8 @@
 fastapi
 uvicorn
-supabase==1.2.0 # Versão conhecida por ser estável e compatível
-pandas==2.2.2
+python-multipart
 python-dotenv
-numpy
-scikit-learn
+supabase-py
+pydantic
+# Fixe a versão do Pandas para resolver o problema de compilação
+pandas==2.1.4
