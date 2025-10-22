@@ -1,8 +1,7 @@
 fastapi
 uvicorn
-supabase
+supabase==1.2.0 # Versão conhecida por ser estável e compatível
 pandas==2.2.2
 python-dotenv
 numpy
 scikit-learn
-
