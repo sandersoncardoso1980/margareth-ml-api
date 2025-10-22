@@ -42,6 +42,17 @@ async def health_check():
         "version": "2.1.0"
     }
 
+# Adicione isso no seu app.py
+@app.get("/api/ml/client-demographics")
+async def get_client_demographics():
+    # Sua lógica para dados demográficos aqui
+    return [
+        {"group": "Idade: 26-35 anos", "percentage": 33.3, "count": 2},
+        {"group": "Idade: 36-45 anos", "percentage": 33.3, "count": 2},
+        {"group": "Gênero: Feminino", "percentage": 66.7, "count": 4},
+        {"group": "Gênero: Masculino", "percentage": 33.3, "count": 2}
+    ]
+
 @app.get("/api/analytics/business-stats")
 async def get_business_stats():
     """Estatísticas gerais do negócio"""
